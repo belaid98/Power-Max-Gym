@@ -1,0 +1,2109 @@
+/*------- NAVBAR + BACKGROUND ------*/ 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #d9d9d9;
+
+}
+
+body
+{
+    font-family :'Poppins', 'sans-serif';
+    font-family: Roboto, Helvatica, sans-serif;
+    background-color: #f1f1f1;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.yellow
+{
+    color: yellow;
+    font-size: 35px;
+}
+
+.nav
+{
+    /* background: #000; */
+    /* overflow-x: hidden; */
+    /* background: transparent;
+    transition: background-color 0.3s ease-in-out,border-bottom , 0.3s ease-in-out;*/
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+   background: #000;
+}
+
+
+.navbar
+{
+    display: flex;
+    color: white; /*power max gym */ 
+    background: transparent;
+    transition: background-color 0.3s ease-in-out,border-bottom , 0.3s ease-in-out;
+}
+
+/*nav.nav-animmate
+{
+    background: #000;
+    border: 1px solid #f1f1f1;
+}
+*/
+
+
+
+
+
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+
+}
+
+.nav-links ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    width: 80%;
+
+}
+
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+   
+}
+
+.nav-links ul li 
+{
+    list-style: none;
+    padding: 8px 25px;
+    
+} 
+
+.navbar
+{
+    padding: 20px 120px;
+}
+
+/* ------------souri mouvmement --------*/
+
+.nav-links ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.nav-links ul li a:hover::after
+{
+    width: 100%;
+}
+
+.button
+{
+    display: flex;
+}    
+
+.btn 
+{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    transition: all 0.2s ease-in-out;
+    background: #f1f1f1;
+    color: #000;
+}
+
+.btn a
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px; 
+}
+
+
+
+
+
+/* -------------------- HOME--------------------------*/
+
+
+.hero1
+{
+    height: 800px;
+    display: flex;
+    overflow: hidden;
+}
+
+.home-left
+{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: #000;
+    box-shadow: 90px 0 100px #000;
+}
+
+.h2home
+{
+    color: #f1f1f1;
+    font-size: 73px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    margin-left: 8vw;
+    white-space: nowrap;
+}
+
+
+p
+{
+    color: #f1f1f1;
+    font-size: 30px;
+    width: 600px;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+
+
+/* 
+p
+{
+    color: #f1f1f1;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+ */
+
+
+.btn-hero
+{
+    display: flex; 
+}
+
+.btn-home
+{
+    font-size: 18px;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 40px;
+    border: 1px solid #f1f1f1;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-home:hover
+{
+    transition: all 0.2s ease;
+    color: #000;
+    background: #f1f1f1;
+}
+
+.b1
+{
+    margin-left: 8vw;
+}
+.b2
+{
+    margin-left: 10px ;
+}
+
+.home-right
+{
+    background-image: url('../Image/biseps.jpg');
+    background-position: 50% 50%; 
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+/*-------------------- INFOS-------------------------*/
+
+.info-section
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.info-card
+{
+    width: 390px;
+    height: auto;
+    margin: 0 20px 80px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+
+.container-info-photo img
+{
+    width: 100%;
+    height: 500%;
+    object-fit: cover;
+}
+
+
+.info-card h2
+{
+    color: #333;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 5px ; 
+
+}
+
+
+
+.info-title
+{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px ;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+#p-card
+{
+    color: #000;;
+    font-size: 20px;
+    width: 90%;
+     margin-left: 8vw; 
+    line-height: 1.3;
+    margin: 10px;
+}
+
+
+.info-card p
+{
+    color: #333;
+    text-align: center;
+    font-size: 23px;
+    padding: 0 5px 15px;
+}
+
+
+
+/*----------------CHOISE---------------------------------*/
+
+.pchoice
+{
+    /*font-size: 20px;
+    color: #f11ff1;
+    margin: 10px;
+    display: flex;
+    justify-content: center; */
+
+    color: #f1f1f1;
+    font-size: 20px;
+    width: 90%;
+    margin-left: 8vw; 
+    line-height: 1.3;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+#choice
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.training-choice
+{
+    width: 30%;
+    text-align: center;
+    color: #f1f1f1;
+    margin: 50px 20px 70px;
+}
+
+
+.training-choice h3
+{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.training-choice p
+{
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto 30px;
+}
+
+.btn-outline-choice
+{
+    width: 300px;
+    padding: 15px 0;
+    font-size: 22px;
+    background: #000;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+
+}
+
+.btn-outline-choice:hover
+{
+    transition: all 0.2s ease-in-out;
+    background: #f1f1f1;
+    color: #000;
+}
+
+
+/*-------------------EQUIPMENT---------------------------*/
+
+
+.title-equipment
+{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px ;
+    margin: 10px;
+
+    text-transform: uppercase;
+}
+
+
+#equipment
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+
+}
+
+
+.btn-modal
+{
+    width: 350px;
+    height: 400px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-modal:nth-child(1)
+{
+    background-image: url('../Image/equip1.jpg');
+}
+
+.btn-modal:nth-child(2)
+{
+    background-image: url('../Image/equip2.jpg');
+}
+
+
+.btn-modal:nth-child(3)
+{
+    background-image: url('../Image/equip3.jpg');
+}
+
+
+.btn-modal:nth-child(4)
+{
+    background-image: url('../Image/equip4.jpg');
+}
+
+
+
+.btn-modal:nth-child(5)
+{
+    background-image: url('../Image/equip5.jpg');
+}
+
+
+.btn-modal:nth-child(6)
+{
+    background-image: url('../Image/equip6.jpg');
+}
+
+
+
+.btn-modal:nth-child(7)
+{
+    background-image: url('../Image/equip7.jpg');
+}
+
+
+
+
+.btn-modal:nth-child(8)
+{
+    background-image: url('../Image/equip8.jpg');
+}
+
+
+.btn-modal:nth-child(9)
+{
+    background-image: url('../Image/equip9.jpg');
+}
+
+.bloc-modal
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+
+
+.active
+{
+    display: block;
+}
+
+.bloc-img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+
+}
+
+.bloc-img img
+{
+    width: 100%;
+}
+
+.close
+{
+    position: absolute;
+    z-index: 4000;
+    top: 5%;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+
+/*---------------------PARALEX----------------------------------*/   
+
+.paralax
+{
+    background-image: url('../Image/cote.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.paralax-txt
+{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*----------------PLANS---------------------------------------*/
+
+.plan-title
+{
+    color: #000;
+    text-align: center;
+    font-size: 65px;
+    padding: 50px 20px 120px;
+    text-transform: uppercase;
+}
+
+#plans
+{
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 1000px;
+}
+
+.card-plan
+{
+    width: 350px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    margin: 20px 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, rgba(234, 234, 234,0.06) 0%, rgba(234, 234, 234,0.06) 50%,rgba(169, 169, 169,0.06) 50%, rgba(169, 169, 169,0.06) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
+    background-size: 72px 72px;
+}
+
+.card-plan h3
+{
+    text-align: center;
+    font-size: 45px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.plan-price
+{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.plan-price span
+{
+    font-size: 80px;
+    position: relative;
+     
+}
+
+.plan-price span::after
+{
+    content: "D";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    font-size: 25px;
+}
+
+
+.card-info
+{
+    max-width: 80%;
+    margin: 20px 40px;
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    align-self: flex-start;
+}
+
+
+.card-plan .card-info .img-card-info
+{
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+/*------contact------------------*/
+
+/*
+
+.contact-title-contact
+{
+    
+    color: #000;
+    text-align: center;
+    font-size: 65px;
+    padding: 50px 20px 120px;
+    text-transform: uppercase;
+}
+
+
+form
+{
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    position: relative ;
+}
+
+
+label,
+input
+{
+    width: 100%;
+    font-size: 20px;
+    margin: 5px 0;
+    
+}
+
+
+form input
+{
+    pad: 10px 5px;
+}
+
+textarea
+{
+    width: 97%;
+    height: 250px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+input:nth-child(4)
+{
+    margin-bottom: 30px ;  
+}
+
+.contact-btn
+{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    
+    background: #000;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.contact-btn:hover
+{
+    color: #000;
+    background: #f1f1f1;
+}
+
+*/
+
+
+
+
+
+/*------FOOTER-------------------------------------------*/
+
+/*
+footer
+{
+    position: flex;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}*/
+
+#h2foter
+{
+    color: white;
+}
+
+.pfoter
+{
+    font-size: 18px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+span
+{
+    color: white;
+}
+
+
+footer
+{
+    position: flex;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: white;
+}
+
+
+
+
+footer
+{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #000;
+    font-size: 18px;
+}
+
+
+
+
+footer h1
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+*/
+
+/*
+.pfooter
+{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- REPONSIVE --------------------*/ 
+
+@media screen and (max-width: 1350px)
+{
+    .home-left
+    {
+        width: 60%;
+    }
+    .home-right
+    {
+        background-position: 45% 20%;
+    }
+}
+
+
+@media screen and (max-width: 7500px)
+{
+    .hero
+    {
+        height: 600px;
+    }
+    .h1
+    {
+        font-size: 50px;
+        padding-top: 120px;
+    }
+    .hero p
+    {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .btn-home
+    {
+        font-size: 22px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .home-left
+    {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 550px)
+{
+    .hero
+    {
+        height: 450px;
+    }
+    h1
+    {
+        font-size: 40px;
+        padding-top: 100px;
+        margin-left: 2vw;
+    }
+    .hero p
+    {
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+    .btn-home
+    {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .b1
+    {
+        margin-left: 2vw;
+    }
+    .b2
+    {
+        margin-left: 10px;
+    }
+
+    .home-left
+    {
+        box-shadow: 20px 0 100px 100px #000;
+        width: 40%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .info-title
+    {
+        font-size: 50px;
+    }       
+}
+
+
+@media screen and (max-width: 550px)
+{
+    .info-title
+    {
+        font-size: 32px;
+        padding: 40px 20px 40px;
+    }    
+
+    .info-card
+    {
+        margin: 0 10px 45px;
+    }
+}
+
+@media screen and (max-width: 1500px)
+{
+    .training-choice
+    {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 775px)
+{
+    #choice
+    {
+        flex-direction: column;
+    }
+    .training-choice
+    {
+        width: 350px;
+        margin: 50px 0px 70px;
+    }
+    .training-choice h3
+    {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .btn-outline-choice
+    { 
+        width: 250px;
+    }
+    .training-choice:nth-child(1)
+    {
+        margin: 50px 20px 0px ;
+    }
+}
+
+
+
+@media screen and (max-width: 850px)
+{
+    .title-equipment
+    {
+        font-size: 45px;
+
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .title-equipment
+    {
+        font-size: 35px;
+        
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    paralax-txt 
+    {
+        font-size: 50px;
+    }
+
+/*------- NAVBAR + BACKGROUND ------*/ 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family :'Poppins', 'sans-serif';
+}
+.yellow
+{
+    color: yellow;
+    font-size: 35px;
+}
+
+.nav
+{
+    /* background: #000; */
+    /* overflow-x: hidden; */
+    /* background: transparent;
+    transition: background-color 0.3s ease-in-out,border-bottom , 0.3s ease-in-out;*/
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+   background: #000;
+}
+
+
+.navbar
+{
+    display: flex;
+    color: white; /*power max gym */ 
+    background: transparent;
+    transition: background-color 0.3s ease-in-out,border-bottom , 0.3s ease-in-out;
+}
+
+/*nav.nav-animmate
+{
+    background: #000;
+    border: 1px solid #f1f1f1;
+}
+*/
+
+
+
+
+
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+
+}
+
+.nav-links ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    width: 80%;
+
+}
+
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+   
+}
+
+.nav-links ul li 
+{
+    list-style: none;
+    padding: 8px 25px;
+    
+} 
+
+.navbar
+{
+    padding: 20px 120px;
+}
+
+/* ------------souri mouvmement --------*/
+
+.nav-links ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.nav-links ul li a:hover::after
+{
+    width: 100%;
+}
+
+.button
+{
+    display: flex;
+}    
+
+.btn 
+{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    transition: all 0.2s ease-in-out;
+    background: #f1f1f1;
+    color: #000;
+}
+
+
+/* -------------------- HOME--------------------------*/
+
+
+.hero1
+{
+    height: 800px;
+    display: flex;
+    overflow: hidden;
+}
+
+.home-left
+{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: #000;
+    box-shadow: 90px 0 100px #000;
+}
+
+h2
+{
+    color: #f1f1f1;
+    font-size: 73px;
+    font-family: Montserrat, Roboto, Helvatica, sans-serif;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    margin-left: 8vw;
+    white-space: nowrap;
+}
+
+
+p
+{
+    color: #f1f1f1;
+    font-size: 30px;
+    width: 600px;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+
+
+/* 
+p
+{
+    color: #f1f1f1;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+ */
+
+
+.btn-hero
+{
+    display: flex; 
+}
+
+.btn-home
+{
+    font-size: 18px;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 40px;
+    border: 1px solid #f1f1f1;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-home:hover
+{
+    transition: all 0.2s ease;
+    color: #000;
+    background: #f1f1f1;
+}
+
+.b1
+{
+    margin-left: 8vw;
+}
+.b2
+{
+    margin-left: 10px ;
+}
+
+.home-right
+{
+    background-image: url('image/biseps.jpg');
+    background-position: 50% 50%; 
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+/*-------------------- INFOS-------------------------*/
+
+.info-section
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.info-card
+{
+    width: 390px;
+    height: auto;
+    margin: 0 20px 80px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+
+.container-info-photo img
+{
+    width: 100%;
+    height: 500%;
+    object-fit: cover;
+}
+
+
+.info-card h2
+{
+    color: #333;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 5px ; 
+
+}
+
+
+
+.info-title
+{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    font-family: Montserrat, Roboto, Helvatica, sans-serif;
+    padding: 20px ;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+#p-card
+{
+    color: #000;;
+    font-size: 20px;
+    width: 90%;
+     margin-left: 8vw; 
+    line-height: 1.3;
+    margin: 10px;
+}
+
+
+.info-card p
+{
+    color: #333;
+    text-align: center;
+    font-size: 23px;
+    padding: 0 5px 15px;
+}
+
+
+
+/*----------------CHOISE---------------------------------*/
+
+.pchoice
+{
+    /*font-size: 20px;
+    color: #f11ff1;
+    margin: 10px;
+    display: flex;
+    justify-content: center; */
+
+    color: #f1f1f1;
+    font-size: 20px;
+    width: 90%;
+    margin-left: 8vw; 
+    line-height: 1.3;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#choice
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.training-choice
+{
+    width: 30%;
+    text-align: center;
+    color: #f1f1f1;
+    margin: 50px 20px 70px;
+}
+
+
+.training-choice h3
+{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.training-choice p
+{
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto 30px;
+}
+
+.btn-outline-choice
+{
+    width: 300px;
+    padding: 15px 0;
+    font-size: 22px;
+    background: #000;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+
+}
+
+.btn-outline-choice:hover
+{
+    transition: all 0.2s ease-in-out;
+    background: #f1f1f1;
+    color: #000;
+}
+
+
+/*-------------------EQUIPMENT---------------------------*/
+
+
+.title-equipment
+{
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px ;
+    margin: 10px;
+    font-family: Montserrat, Roboto, Helvatica, sans-serif;
+    text-transform: uppercase;
+}
+
+
+#equipment
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+
+}
+
+
+.btn-modal
+{
+    width: 350px;
+    height: 400px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-modal:nth-child(1)
+{
+    background-image: url('image/equip1.jpg');
+}
+
+.btn-modal:nth-child(2)
+{
+    background-image: url('image/equip2.jpg');
+}
+
+
+.btn-modal:nth-child(3)
+{
+    background-image: url('image/equip3.jpg');
+}
+
+
+.btn-modal:nth-child(4)
+{
+    background-image: url('image/equip4.jpg');
+}
+
+
+
+.btn-modal:nth-child(5)
+{
+    background-image: url('image/equip5.jpg');
+}
+
+
+.btn-modal:nth-child(6)
+{
+    background-image: url('image/equip6.jpg');
+}
+
+
+
+.btn-modal:nth-child(7)
+{
+    background-image: url('image/equip7.jpg');
+}
+
+
+
+
+.btn-modal:nth-child(8)
+{
+    background-image: url('image/equip8.jpg');
+}
+
+
+.btn-modal:nth-child(9)
+{
+    background-image: url('image/equip9.jpg');
+}
+
+.bloc-modal
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+
+
+.active
+{
+    display: block;
+}
+
+.bloc-img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+
+}
+
+.bloc-img img
+{
+    width: 100%;
+}
+
+.close
+{
+    position: absolute;
+    z-index: 4000;
+    top: 5%;
+    right: 5%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+
+/*---------------------PARALEX----------------------------------*/   
+
+.paralax
+{
+    background-image: url('image/cote.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.paralax-txt
+{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*----------------PLANS---------------------------------------*/
+
+.plan-title
+{
+    color: #000;
+    text-align: center;
+    font-size: 65px;
+    padding: 50px 20px 120px;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, transparent 0%, transparent 27%,rgba(214, 214, 214,0.06) 27%, rgba(214, 214, 214,0.06) 38%,transparent 38%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 39%,rgba(214, 214, 214,0.06) 39%, rgba(214, 214, 214,0.06) 68%,transparent 68%, transparent 100%),linear-gradient(90deg, transparent 0%, transparent 74%,rgba(214, 214, 214,0.06) 74%, rgba(214, 214, 214,0.06) 79%,transparent 79%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    font-family: Montserrat, Roboto, Helvatica, sans-serif;
+}
+
+#plans
+{
+    
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 1000px;
+}
+
+.card-plan
+{
+    width: 350px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    margin: 20px 10px;
+    border-radius: 5px;
+
+}
+
+.card-plan h3
+{
+    text-align: center;
+    font-size: 45px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.plan-price
+{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.plan-price span
+{
+    font-size: 80px;
+    position: relative;
+     
+}
+
+.plan-price span::after
+{
+    content: "D";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    font-size: 25px;
+}
+
+
+.card-info
+{
+    max-width: 80%;
+    margin: 20px 40px;
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    align-self: flex-start;
+}
+
+
+.card-plan .card-info .img-card-info
+{
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: yellow;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: yellow;
+  }
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: yellow;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .content .phone{
+    margin: 15px 0;
+  }
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+  }
+  .right form .msg{
+    margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+    outline-color: #3498db;
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: yellow;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: #000;
+  }
+  .bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+  }
+  .bottom center span{
+    color: #656565;
+  }
+  .bottom center a{
+    color: yellow;
+    text-decoration: none;
+  }
+  .bottom center a:hover{
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+  
+.copyright
+{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- REPONSIVE --------------------*/ 
+
+@media screen and (max-width: 1350px)
+{
+    .home-left
+    {
+        width: 60%;
+    }
+    .home-right
+    {
+        background-position: 45% 20%;
+    }
+}
+
+
+@media screen and (max-width: 7500px)
+{
+    .hero
+    {
+        height: 600px;
+    }
+    .h1
+    {
+        font-size: 50px;
+        padding-top: 120px;
+    }
+    .hero p
+    {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .btn-home
+    {
+        font-size: 22px;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .home-left
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    .hero
+    {
+        height: 450px;
+    }
+    h1
+    {
+        font-size: 40px;
+        padding-top: 100px;
+        margin-left: 2vw;
+    }
+    .hero p
+    {
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+    .btn-home
+    {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .b1
+    {
+        margin-left: 2vw;
+    }
+    .b2
+    {
+        margin-left: 10px;
+    }
+
+    .home-left
+    {
+        box-shadow: 20px 0 100px 100px #000;
+        width: 40%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .info-title
+    {
+        font-size: 50px;
+    }       
+}
+
+
+@media screen and (max-width: 550px)
+{
+    .info-title
+    {
+        font-size: 32px;
+        padding: 40px 20px 40px;
+    }    
+
+    .info-card
+    {
+        margin: 0 10px 45px;
+    }
+}
+
+@media screen and (max-width: 1500px)
+{
+    .training-choice
+    {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 775px)
+{
+    #choice
+    {
+        flex-direction: column;
+    }
+    .training-choice
+    {
+        width: 350px;
+        margin: 50px 0px 70px;
+    }
+    .training-choice h3
+    {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .btn-outline-choice
+    { 
+        width: 250px;
+    }
+    .training-choice:nth-child(1)
+    {
+        margin: 50px 20px 0px ;
+    }
+}
+
+
+
+@media screen and (max-width: 850px)
+{
+    .title-equipment
+    {
+        font-size: 45px;
+
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .title-equipment
+    {
+        font-size: 35px;
+        
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    paralax-txt 
+    {
+        font-size: 50px;
+    }
+}
+}
+
+@media screen and (max-width: 1100px)
+{
+    #contact
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .title-equipment
+    {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .contact-title-contact
+    {
+        font-size: 35px;
+    }
+}
